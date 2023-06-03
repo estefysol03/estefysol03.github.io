@@ -1,0 +1,336 @@
+
+*::after,
+*::before,
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+margin: 0 auto;
+max-width:1200 ;
+font-family: 'lato';
+color: grey;
+background-color: lightsalmon;
+ 
+}
+
+.carousel {
+      width: 500px; /* Ancho deseado del carrusel */
+      height: 300px; /* Alto deseado del carrusel */
+    }
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 img {
+    
+      
+    width: 80px; /* Ajusta el tamaño del logotipo  */
+    margin-right: 20px; /* Espacio entre el logotipo y el texto */
+  }
+
+
+
+.icon-cart{
+    right: 0;
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+    
+}
+
+.icon-cart:hover{
+cursor: pointer;
+}
+
+
+img {
+max-width: 100%;
+}
+
+
+header{
+
+    display: flex;
+    justify-content: space-between; 
+    padding: 30px 0 40px 0; 
+} 
+
+
+.container-items{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 20px;
+}
+
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{         /*lo que contiene el icono carrito*/
+    position:absolute;
+    top: 55%;
+    right:0;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+}
+
+#contador-productos {
+font-size: 12px;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.20);
+  border-radius: 10px  ;
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+   flex: 0.8;
+}
+
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0,0, 0,0.20);
+  
+}
+
+.titulo-producto-carrito{
+font-size: 20px;
+}
+
+.precio-producto-carrito{
+font-weight: 700px;
+font-size: 20px;
+margin-left: 10px;
+
+}
+
+.cantidad-producto-carrito{
+font-weight: 400px;
+font-size: 20px;
+}
+
+
+.icon-close{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-close:hover{
+    stroke: blue;
+    cursor: pointer;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.cart-total h3{
+font-size: 20px;
+font-weight: 700px;
+
+}
+
+.total-pagar{
+   font-size: 20px;
+   font-weight: 900; 
+}
+
+.hidden-cart{
+    display: none;
+}
+
+
+
+.item{
+    border-radius:  10px;
+    scroll-margin-top: 8ex;
+}   
+
+.item:hover{
+ 
+   box-shadow: 0 10px 20px  rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    border-top-left-radius:50px ;
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+
+.item:hover img{
+    transform: scale(1.2);
+
+}
+
+.price {
+    font-size: 18px;  
+    font-weight: 900;
+}
+
+.info-producto button{
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.info-producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-empty {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px   rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+   
+    
+
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+   
+
+}
+
+h2{
+    color: black;
+    font-size: 35px;
+}
+
+label{
+    color: #283628;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #EDFFF0;
+    border: 2px solid;
+    color: #000;
+    outline: none;
+}
+
+.form-txt {
+margin-bottom: 30px;
+display: flex;
+justify-content: space-between;
+text-align: center;
+
+
+}
+
+.form-txt a {
+
+    color: blue;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.boton {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color:#51D94C;
+    box-shadow: 0 0 20px rgba(25, 254,0, 0.4);
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: #50E04B;
+}
+
+@media(max-width:991px){
+
+    body{
+        padding: 30px;
+        
+    }
+    form{
+        padding: 50px 55px;
+        width: 100px;
+    }
+    input{
+        padding: 15px;
+    }
+}
+

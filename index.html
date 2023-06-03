@@ -1,23 +1,253 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=p, initial-scale=1.0">
-    <title> Mayte Ropa </title>
-</head>
-<body>
-<div class = "head">
-  <div class = "logo">
-<a href="#">logo</a>
-  </div>
-<div> class ="nabear</div>
-<a href="#">Principal</a>
-<a href="#">Articulo</a>
-<a href="#">Contactos</a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tienda Mayte </title>
+    <link rel = "stylesheet" href= "styles.css">
+
+
+   
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  
+    
+</head> 
+<body>  
+
+    <header> 
+      <div id="inicio">
+        <h1>
+          <img src="https://i.pinimg.com/236x/18/f6/87/18f6878b11b851a92f07c16f149c1b3e.jpg" alt="Logo de la página" />
+             ¡¡MAYTE!!
+        </h1>
+        <h2>Bienvenido</h2>
+        <p>¡Gracias por visitar!</p>
+        
+        <hr>
+
+        <div class="carousel">
+          <div><img src="https://i.pinimg.com/236x/43/a6/24/43a624b2ad46c7e463d9d05e2b0fe456.jpg" alt="Imagen 1"></div>
+          <div><img src="https://i.pinimg.com/236x/02/d7/81/02d781509e91ed4882002a5855adefd0.jpg" alt="Imagen 2"></div>
+          <div><img src="https://i.pinimg.com/236x/8d/55/93/8d5593891e7aaed5514382a3ce2d6da3.jpg" alt="Imagen 3"></div>
+          <div><img src="https://i.pinimg.com/236x/8d/87/68/8d87682cf06f22e52449d0f1bcaea630.jpg" alt="Imagen 3"></div>
+          <div><img src="https://i.pinimg.com/236x/00/30/5a/00305ae89fa2522f5a607a7c8e3c299e.jpg" alt="Imagen 3"></div>
+        
+        </div>
+
+
+
+      </div>
+      
+
+
+        <nav>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#contactos">Contactos</a></li>
+          </ul>
+        </nav>
+      
+      <br>
+      <br>
+
+      
+      
+       
+        <div class="container-icon">
+          <svg
+              xmlns="http://www.w3.org/2000/svg" 
+               fill="none" 
+               viewBox="0 0 24 24" 
+              stroke-width="1.5" 
+              stroke="currentColor" 
+              class="icon-cart" > 
+             
+              <path
+                stroke-linecap="round" 
+               stroke-linejoin="round" 
+               d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+             </svg>
+      
+          <div class="count-products">
+           <span id="contador-productos">0</span>
+          </div>
+
+         <div class="container-cart-products hidden-cart">
+      
+          <div class="cart-product">
+            <div class="info-cart-product">
+       <span class="cantidad-producto-carrito">1</span>
+             <p class="titulo-producto-carrito">Camiseta con Estampado</p>
+          <span class="precio-producto-carrito">$1900</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                 class="icon-close">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+            
+          </div> 
+      
+          <div class="cart-total">
+            <h3> Total:</h3>
+            <span class="total-pagar">$2000</span>
+          </div>
+         </div>
+
 </div>
-</body>
-</html>
+
+        </header>
+      
+       
+        
+
+<hr>
+<hr>
+
+        <div id="articulos">
+          <h2>Nuestros artículos</h2>
+          <p>Nuestros Artículos:</p>
+        </div>
+         
+        
+  
+  
 
 
 
+        <hr>
+        <hr>
+
+      <div class="container-items"> 
+      
+        <div class="item">
+          <figure>
+            <img src="https://i.pinimg.com/236x/43/a6/24/43a624b2ad46c7e463d9d05e2b0fe456.jpg"
+      
+             alt="producto"
+             />  
+          </figure>    
+        <div class="info-producto">
+          <h2> Camiseta con Estampado </h2> 
+          <p class="precio"> $1900 </p>
+          <button> Añadir al carrito</button>
+        </div>
+        </div>
+      
+
+        <div class="item"> 
+          <figure> 
+            <img src="https://i.pinimg.com/236x/02/d7/81/02d781509e91ed4882002a5855adefd0.jpg" 
+             alt="producto"
+             /> 
+          </figure>  
+        <div class="info-producto">
+          <h2> Remera corte Princesa </h2>
+          <p class="precio"> $2500 </p>
+          <button> Añadir al carrito</button>
+        </div> 
+        </div>
+      
+        <div class="item"> 
+          <figure> 
+            <img src="https://i.pinimg.com/236x/8d/55/93/8d5593891e7aaed5514382a3ce2d6da3.jpg"  
+             alt="producto"
+             /> 
+          </figure>  
+        <div class="info-producto">
+          <h2> Remera Gatito </h2>
+          <p class="precio"> $2600 </p>
+          <button> Añadir al carrito</button>
+        </div> 
+        </div>
+      
+      
+        <div class="item"> 
+          <figure> 
+            <img src="https://i.pinimg.com/236x/8d/87/68/8d87682cf06f22e52449d0f1bcaea630.jpg"  
+             alt="producto" 
+             /> 
+          </figure>  
+        <div class="info-producto">
+          <h2> Remera Star-Planet </h2>
+          <p class="precio"> $2900 </p>
+          <button> Añadir al carrito</button>
+        </div> 
+        </div> 
+      
+        <div class="item"> 
+          <figure> 
+            <img src="https://i.pinimg.com/236x/00/30/5a/00305ae89fa2522f5a607a7c8e3c299e.jpg"  
+             alt="producto"
+             /> 
+          </figure>  
+         <div class="info-producto">
+          <h2> Remera flower </h2>
+          <p class="precio"> $2300 </p>
+          <button> Añadir al carrito</button>
+         </div> 
+        </div>
+       
+      </div>
+
+
+           <hr>
+           <hr>
+     
+           <div id="contactos">
+            <h2>Información de contacto</h2>
+            <p>Ponte en contacto con nosotros a través de los siguientes medios:</p>
+            
+          </div>
+ 
+
+
+        <form>
+
+          <h2> Contactos </h2>
+          <div class="input-group">
+
+            <label form="name">Nombre</label>
+            <input tape="text" name="name" id="name" placeholder="Nombre">
+
+            <label form="phone">Telefono</label>
+            <input tape="tel" name="phone" id="phone" placeholder="Telefono">
+
+            <label form="email">Email</label>
+            <input tape="email" name="email" id="email" placeholder="Email">
+
+            <label form="message">Mensaje</label>
+            <textarea name="mensaje" id="messaje" cols="30" rows="5" placeholder="Mensaje"> </textarea>
+            <di class="form-txt">
+              <a href="#">Politica de privacidad</a>
+              <a href="#">Terminos y condiciones</a>
+
+            </div>
+           <input class="btn" type="submit" value="Enviar">
+
+
+          </div>
+        </form>
+
+
+        <hr>
+
+        <script>
+          $(document).ready(function() {
+            $('.carousel').slick();
+          });
+        </script>
+        
+        <script src="index.js"></script>
+
+
+
+       
+
+                          
+      </body>
+      </html>
