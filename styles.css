@@ -19,20 +19,45 @@ background-color: lightsalmon;
  
 }
 
-.carousel {
-      width: 500px; /* Ancho deseado del carrusel */
-      height: 300px; /* Alto deseado del carrusel */
-    }
 
 
-nav ul {
+    .carrusel-container {
+        overflow: hidden;
+      }
+      
+      .carrusel {
+        display: flex;
+        animation: desplazamiento-lateral 10s linear infinite;
+      }
+      
+      .carrusel-item {
+        flex: 0 0 100%;
+        /* Ajusta el tamaño de los elementos según tus necesidades */
+      }
+      
+      @keyframes desplazamiento-lateral {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      
+
+
+
+      nav ul {
+        background-color: white; /* Color de fondo del menú */
+        padding: 10px; /* Espacio interno del menú */
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
   }
 
-  nav li {
+   li {
+    display: inline-block; /* Muestra los elementos en línea */
     margin-right: 10px;
   }
 
@@ -41,6 +66,8 @@ nav ul {
     align-items: center;
   }
 
+  
+  
   h1 img {
     
       
@@ -51,7 +78,7 @@ nav ul {
 
 
 .icon-cart{
-    right: 0;
+   
     width: 40px;
     height: 40px;
     stroke: #000;
@@ -152,8 +179,8 @@ font-size: 20px;
 
 
 .icon-close{
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 .icon-close:hover{
@@ -243,19 +270,21 @@ font-weight: 700px;
 
 
 
-
-
-form{
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura del contenedor  */
+  }
+  
+  form {
+    width: 350px; /* Ajusta el ancho del formulario */
     padding: 50px 55px;
-    box-shadow: 0 0 20px   rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0; 
     border-radius: 20px;
-    text-align: center;
-    width: 340px;
-   
-    
-
-
+   text-align: center;
 }
+  
 
 .input-group{
     display: flex;
@@ -305,7 +334,7 @@ text-align: center;
     text-decoration: none;
 }
 
-.boton {
+.btn {
     font-size: 16px;
     color: white;
     border: 0;
@@ -315,7 +344,7 @@ text-align: center;
     cursor: pointer;
 }
 
-.boton:hover{
+.btn:hover{
     background-color: #50E04B;
 }
 
