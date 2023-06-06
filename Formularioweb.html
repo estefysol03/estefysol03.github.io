@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel ="stylesheet" href="styleFormulario.css">
+</head>
+<body>
+    
+
+
+      <form action="https://formsubmit.co/estefysol03@gmail.com" method="POST">
+        <h2>Formulario</h2>
+
+        <div class="input-group">
+
+          <label for="pelicula">Película:</label>
+          <input type="text" id="lista-pelicula" name="pelicula" maxlength="30" required>
+          <ul id="lista-pelicula"></ul>
+
+    
+          <label for="puntuacion">Puntuación:</label>
+          <select id="puntuacion" name="puntuacion" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+
+
+          <label for="comentario">Comentario:</label>
+          <textarea id="comentario" name="comentario" minlength="10" maxlength="200"></textarea>
+       
+
+        <input class="btn" type="submit" value="Enviar">
+      </div>
+      </form>
+      
+
+
+<script src="jsFormulario.js"> </script>
+
+</body>
+</html>
